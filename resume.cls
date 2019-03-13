@@ -16,6 +16,10 @@
 \RequirePackage{fontawesome}
 \RequirePackage{geometry}
 \RequirePackage{tikz}
+\RequirePackage{graphicx}
+
+\usetikzlibrary{calc} 
+\graphicspath{ {./img/} }
 
 %-------------------------------------------------------------------------------
 %                Page layout

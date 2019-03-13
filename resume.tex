@@ -2,10 +2,19 @@
 
 \begin{document}
 	\begin{tikzpicture}[remember picture,overlay]
-		\node [rectangle, fill=gray, anchor=north, minimum width=\paperwidth, minimum height=\paperheight+2cm] (box) at (0.5,0.5){};
+		\node [rectangle, fill=gray, anchor=north, minimum width=\paperwidth, minimum height=\paperheight+2cm] (box) at (0.5,0.5){%
+			\noindent
+			\begin{minipage}[t][\paperheight][t]{0pt}
+				\input{resume/basic-info.tex}
+			\end{minipage}
+		};
 	\end{tikzpicture}
-	Test
 	\begin{tikzpicture}[remember picture,overlay]
-		\node [rectangle, fill=blue, anchor=north, minimum width=1.3\paperwidth, minimum height=\paperheight+2cm] (box) at (\paperwidth,0.5){};
+		\node [rectangle, fill=blue, anchor=north, minimum width=1.3\paperwidth, minimum height=\paperheight+2cm] (box) at (\paperwidth,0.5){%
+			\noindent
+			\begin{minipage}[t][\paperheight][t]{1.25\paperwidth}
+				Test
+			\end{minipage}
+		};
 	\end{tikzpicture}
 \end{document}
