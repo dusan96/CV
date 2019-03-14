@@ -5,7 +5,6 @@
 
 \ProvidesClass{resume}
 \NeedsTeXFormat{LaTeX2e}
-
 \LoadClass{article}
 
 %-------------------------------------------------------------------------------
@@ -17,9 +16,21 @@
 \RequirePackage{geometry}
 \RequirePackage{tikz}
 \RequirePackage{graphicx}
+\RequirePackage{fontspec}
+\RequirePackage{array}
+\RequirePackage{boldline}
+\RequirePackage{makecell}
+\RequirePackage{booktabs}
+\RequirePackage{scrextend}
 
 \usetikzlibrary{calc} 
+
+%-------------------------------------------------------------------------------
+%                Directories configuration
+%-------------------------------------------------------------------------------
+
 \graphicspath{ {./img/} }
+\def\@fontdir{fonts/}
 
 %-------------------------------------------------------------------------------
 %                Page layout
@@ -28,6 +39,17 @@
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \geometry{a4paper,margin=0mm, ignoreall}
+
+%-------------------------------------------------------------------------------
+%                Fonts
+%-------------------------------------------------------------------------------
+
+\setmainfont{CalibriRegular.ttf}[
+Path = \@fontdir,
+BoldItalicFont = CalibriBoldItalic.ttf,
+BoldFont = CalibriBold.ttf,
+ItalicFont = CalibriItalic.ttf
+]
 
 %-------------------------------------------------------------------------------
 %                Colors

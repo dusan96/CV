@@ -1,0 +1,22 @@
+\documentclass[a4paper]{resume}
+
+\begin{document}
+	\begin{minipage}[t][0.99\paperheight][t]{0.4\paperwidth}
+	\begin{tikzpicture}[remember picture,overlay]
+		\node [rectangle, fill=darkgray, anchor=north, minimum width=0.4\paperwidth, minimum height=\paperheight+2cm] (box) at (4.2,0.5){%
+			\begin{minipage}[c][0.99\paperheight][t]{0.4\paperwidth}%
+				\begin{center}
+					\input{resume/photo.tex}
+				\end{center}
+				\input{resume/personal-info-english.tex}
+			\end{minipage}
+		};
+	\end{tikzpicture}
+	\end{minipage}
+	\begin{minipage}[t][0.99\paperheight][t]{0.6\paperwidth}
+		\begin{tikzpicture}[remember picture,overlay]
+		\node [rectangle, fill=blue, anchor=north, minimum width=0.6\paperwidth, minimum height=\paperheight+2cm] (box) at (6.2,0.5){%
+		};
+		\end{tikzpicture}
+	\end{minipage}
+\end{document}
