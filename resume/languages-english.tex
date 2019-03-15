@@ -1,0 +1,30 @@
+\begin{addmargin}[0.05\textwidth]{0cm}
+	\color{white}
+	\def\arraystretch{2} 
+	\setlength\tabcolsep{0cm}
+	\begin{tabular*}{0.9\textwidth}{c @{\extracolsep{\fill} } c @{\extracolsep{\fill} } c}
+		\multicolumn{3}{l}{\Large LANGUAGES} \\ \Xhline{0.1cm} \vspace{-0.5cm} \\
+		\begin{tikzpicture}[anchor=center]
+		\clip (0,0) circle (1cm);
+		\node (0,0) {\includegraphics[width = 0.15\linewidth]{serbia-flag}};
+		\tkzDefPoint(0,0){O}
+		\tkzDrawArc[R, color = lime, line width = 0.15cm](O,0.9cm)(0,360)
+		\end{tikzpicture} &
+		\begin{tikzpicture}[anchor=center]
+		\clip (0,0) circle (1cm);
+		\node (0,0) {\includegraphics[width = 0.15\linewidth]{united-kingdom-flag}};
+		\tkzDefPoint(0,0){O}
+		\tkzDrawArc[R, color = lime, line width = 0.15cm](O,0.9cm)(0,230)
+		\tkzDrawArc[R, color = white, line width = 0.07cm](O,0.9cm)(230,360)
+		\end{tikzpicture} &
+		\begin{tikzpicture}[anchor=center]
+		\clip (0,0) circle (1cm);
+		\node (0,0) {\includegraphics[width = 0.15\linewidth]{germany-flag}};
+		\tkzDefPoint(0,0){O}
+		\tkzDrawArc[R, color = lime, line width = 0.15cm](O,0.9cm)(0,110)
+		\tkzDrawArc[R, color = white, line width = 0.07cm](O,0.9cm)(110,360)
+		\end{tikzpicture} \\
+		\large Serbian & \large English & \large German \vspace{-0.4cm}\\ 
+		10|10 & 7|10 & 3|10 \\ \Xhline{0.05cm}
+	\end{tabular*}
+\end{addmargin} 

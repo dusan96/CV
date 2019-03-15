@@ -14,7 +14,6 @@
 \RequirePackage{xcolor}
 \RequirePackage{fontawesome}
 \RequirePackage{geometry}
-\RequirePackage{tikz}
 \RequirePackage{graphicx}
 \RequirePackage{fontspec}
 \RequirePackage{array}
@@ -22,7 +21,10 @@
 \RequirePackage{makecell}
 \RequirePackage{booktabs}
 \RequirePackage{scrextend}
+\RequirePackage{tikz}
+\RequirePackage{tkz-euclide}
 
+\usetkzobj{all}
 \usetikzlibrary{calc} 
 
 %-------------------------------------------------------------------------------
@@ -61,7 +63,7 @@ ItalicFont = CalibriItalic.ttf
 \definecolor{silver}{HTML}{DDDDDD}
 \definecolor{green}{HTML}{2ECC40}
 \definecolor{olive}{HTML}{3D9970}
-\definecolor{lime}{HTML}{01FF70}
+\definecolor{lime}{HTML}{7CFC00}
 \definecolor{yellow}{HTML}{FFDC00}
 \definecolor{orange}{HTML}{FF851B}
 \definecolor{purple}{HTML}{B10DC9}
