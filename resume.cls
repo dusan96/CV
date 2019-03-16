@@ -12,7 +12,7 @@
 %-------------------------------------------------------------------------------
 
 \RequirePackage{xcolor}
-\RequirePackage{fontawesome}
+\RequirePackage{fontawesome5}
 \RequirePackage{geometry}
 \RequirePackage{graphicx}
 \RequirePackage{fontspec}
