@@ -1,4 +1,5 @@
 \documentclass[a4paper]{resume}
+\pagecolor{white}
 
 \begin{document}
 	\begin{minipage}[t][0.99\paperheight][t]{0.4\paperwidth}
@@ -21,9 +22,6 @@
 		\end{tikzpicture}
 	\end{minipage}
 	\begin{minipage}[t][0.99\paperheight][t]{0.6\paperwidth}
-		\begin{tikzpicture}[remember picture,overlay]
-		\node [rectangle, fill=white, anchor=north, minimum width=0.6\paperwidth, minimum height=\paperheight+2cm] (box) at (6.3,0.5){%
-		};
-		\end{tikzpicture}
+				\input{resume/timeline-english.tex}
 	\end{minipage}
 \end{document}

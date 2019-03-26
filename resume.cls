@@ -23,9 +23,11 @@
 \RequirePackage{scrextend}
 \RequirePackage{tikz}
 \RequirePackage{tkz-euclide}
+\RequirePackage{multirow}
+\RequirePackage{blindtext}
 
 \usetkzobj{all}
-\usetikzlibrary{calc} 
+\usetikzlibrary{calc,positioning} 
 
 %-------------------------------------------------------------------------------
 %                Directories configuration
@@ -57,8 +59,9 @@ ItalicFont = CalibriItalic.ttf
 %                Colors
 %-------------------------------------------------------------------------------
 
-\definecolor{white}{HTML}{FFFFFF}
+\definecolor{white}{HTML}{F5F5F5}
 \definecolor{black}{HTML}{111111}
+\definecolor{darkgray}{HTML}{3f3f3f}
 \definecolor{gray}{HTML}{AAAAAA}
 \definecolor{silver}{HTML}{DDDDDD}
 \definecolor{green}{HTML}{2ECC40}
