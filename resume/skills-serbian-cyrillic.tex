@@ -1,0 +1,74 @@
+\begin{addmargin}[0.05\textwidth]{0.05\textwidth}
+	\color{darkgray}
+	\def\arraystretch{2} 
+	\setlength\tabcolsep{0cm}
+	\begin{tabular*}{0.9\textwidth}{l}
+		\Large \faCogs{ ВЕШТИНЕ} \\ \Xhline{0.1cm}
+	\end{tabular*}
+	
+	\vspace{0.5cm}
+
+	\begin{tikzpicture}[anchor=center]
+		\tkzDefPoint(0,0){O}
+		\tkzDrawArc[R, color = blue, line width = 0.4cm](O,2cm)(0,120)
+		\tkzDrawArc[R, color = green, line width = 0.4cm](O,2cm)(120,180)
+		\tkzDrawArc[R, color = red, line width = 0.4cm](O,2cm)(180,240)
+		\tkzDrawArc[R, color = orange, line width = 0.4cm](O,2cm)(240,270)
+		\tkzDrawArc[R, color = yellow, line width = 0.4cm](O,2cm)(270,300)
+		\tkzDrawArc[R, color = lime, line width = 0.4cm](O,2cm)(300,330)
+		\tkzDrawArc[R, color = aqua, line width = 0.4cm](O,2cm)(330,360)
+		
+		\node[color=darkgray] at (0, 0.2) {\large ПРОГРАМСКИ};
+		\node[color=darkgray] at (0, -0.2) {\large ЈЕЗИЦИ};
+		
+		\draw[color=blue, line width=0.05cm] (1.8, 0) -- (3.7,0);
+		\node[color=darkgray] at (3.1, 0.2) {\large C/C++};
+		
+		\draw[color=green, line width=0.05cm] ({1.8*cos(120)}, {1.8*sin(120)}) -- ({2.8*cos(120)}, {2.8*sin(120)}) -- ({2.8*cos(120)-1.5}, {2.8*sin(120)});
+		\node[color=darkgray] at ({2.8*cos(120)-0.9}, {2.8*sin(120)+0.2}) {\large Python};
+		
+		\draw[color=red, line width=0.05cm] (-1.8, 0) -- (-3.7,0);
+		\node[color=darkgray] at (-3.32, 0.2) {\large Java};
+		
+		\draw[color=orange, line width=0.05cm] ({1.8*cos(240)}, {1.8*sin(240)}) -- ({2.8*cos(240)}, {2.8*sin(240)}) -- ({2.8*cos(240)-1.5}, {2.8*sin(240)});
+		\node[color=darkgray] at ({2.8*cos(240)-1.1}, {2.8*sin(240)+0.2}) {\large Ruby};
+		
+		\draw[color=yellow, line width=0.05cm] (0,-1.8) -- (0,-2.8);
+		\node[color=darkgray] at (0, -3) {\large R};
+		
+		\draw[color=lime, line width=0.05cm] ({1.8*cos(300)}, {1.8*sin(300)}) -- ({2.8*cos(300)}, {2.8*sin(300)}) -- ({2.8*cos(300)+1.5}, {2.8*sin(300)});
+		\node[color=darkgray] at ({2.8*cos(300)+1.15}, {2.8*sin(300)+0.2}) {\large SQL};
+		
+		\draw[color=aqua, line width=0.05cm] ({1.8*cos(330)}, {1.8*sin(330)}) -- ({2.8*cos(330)}, {2.8*sin(330)}) -- ({2.8*cos(330)+1.5}, {2.8*sin(330)});
+		\node[color=darkgray] at ({2.8*cos(330)+1.05}, {2.8*sin(330)+0.2}) {\large Scala};
+		
+			\tkzDefPoint(6,0.5){O1}
+		\tkzDrawArc[R, color = blue, line width = 0.4cm](O1,1cm)(-90,150)
+		\tkzDefPoint(6,-1.5){O2}
+		\tkzDrawArc[R, color = aqua, line width = 0.4cm](O2,1cm)(90,330)
+		
+		\node[color=darkgray] at (O1) {\Huge \faLinux};
+		\node[color=darkgray] at (O2) {\Huge \faWindows};
+		
+		\node[color=darkgray] at (6,2.5) {\large ОПЕРАТИВНИ};
+		\node[color=darkgray] at (6,2) {\large СИСТЕМИ};
+	\end{tikzpicture}
+	
+	\vspace{1cm}
+	
+	\begin{tikzpicture}
+	\node[color=darkgray] at (0.5,-3) {\large ВЕБ ПРОГРАМИРАЊЕ};
+	\tikzset{
+		lines/.style={draw=none},
+	}
+	\pie [polar, explode=0.1, text=inside, before number=\phantom,after number=, color={blue, aqua, blue, aqua}, style={lines}] {40/ \large HTML CSS, 32/ \large JavaScript, 15/ \large PHP, 25/ \large Wordpress}
+	
+	\node at ({1.8*cos(0)+6},{1.8*sin(0)}) {\includegraphics[width = 0.1\linewidth]{git}};
+	\node at ({1.8*cos(60)+6},{1.8*sin(60)}) {\includegraphics[width = 0.1\linewidth]{bash}};
+	\node at ({1.8*cos(120)+6},{1.8*sin(120)}) {\includegraphics[width = 0.1\linewidth]{aws}};
+	\node at ({1.8*cos(180)+6},{1.8*sin(180)}) {\includegraphics[width = 0.1\linewidth]{adobe-illustrator}};
+	\node at ({1.8*cos(240)+6},{1.8*sin(240)}) {\includegraphics[width = 0.1\linewidth]{office365}};
+	\node at ({1.8*cos(300)+6},{1.8*sin(300)}) {\includegraphics[width = 0.1\linewidth]{vmware}};
+	\node[color=darkgray] at (6,0) {\large АЛАТИ};
+	\end{tikzpicture}
+\end{addmargin}

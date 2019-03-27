@@ -24,7 +24,7 @@
 \RequirePackage{tikz}
 \RequirePackage{tkz-euclide}
 \RequirePackage{multirow}
-\RequirePackage{blindtext}
+\RequirePackage{pgf-pie}
 
 \usetkzobj{all}
 \usetikzlibrary{calc,positioning} 
@@ -74,6 +74,9 @@ ItalicFont = CalibriItalic.ttf
 \definecolor{fuchsia}{HTML}{F012BE}
 \definecolor{red}{HTML}{FF4136}
 \definecolor{blue}{HTML}{0074D9}
+\definecolor{egyptian}{HTML}{1034A6}
+\definecolor{corn}{HTML}{6593F5}
+\definecolor{electric}{HTML}{7EF9FF}
 \definecolor{navy}{HTML}{001F3F}
 \definecolor{aqua}{HTML}{7FDBFF}
 \definecolor{teal}{HTML}{0074D9}
